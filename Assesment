@@ -1,0 +1,20 @@
+import java.util.Arrays;
+
+public class SortAlphanumericString {
+
+    public static void main(String[] args) {
+        String str = "a1b2c3d4e5";
+
+        // Convert string to character array
+        char[] chars = str.toCharArray();
+
+        // Sort the character array using Arrays.sort()
+        Arrays.sort(chars);
+
+        // Reconstruct the sorted string
+        String sortedStr = new String(chars);
+
+        System.out.println("Original string: " + str);
+        System.out.println("Sorted string: " + sortedStr);
+    }
+}
